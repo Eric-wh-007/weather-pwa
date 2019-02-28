@@ -98,7 +98,7 @@ const mockData = {
     const xhr = new XMLHttpRequest()
     //非常不推荐的写法 这个key应该在服务端获取 但我就是懒 有什么办法
     const key = 'a02eede5e6d54d954a1d1c67d3395f78';
-    var url = `http://apis.juhe.cn/simpleWeather/query?city=${encodeURI(city)}&key=${key}`
+    var url = `https://apis.juhe.cn/simpleWeather/query?city=${encodeURI(city)}&key=${key}`
     xhr.onreadystatechange = callback.bind(this, xhr.response);
     xhr.open('GET', url);
     xhr.setRequestHeader('Content-Type', 'application/json;charset=utf-8')
@@ -117,7 +117,7 @@ const mockData = {
     }
   }
 
-  app.getWeatherData('beijing', function(res){
+  app.getWeatherData('北京', function(res){
     console.log(res)
   });
 })();
