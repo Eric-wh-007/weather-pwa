@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html, body {
+  font-family: 'Helvetica', 'Verdana', sans-serif;
+  width: 100%;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  background-color: #ececec
+}
+
+header {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  padding: 16px 16px 0 16px;
+  background-color: #3f52b5;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-weight: 400;
+  flex: 1;
+  font-size: 20px;
+  color: #fff;
+}
+
+.btn {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+  border: none;
+}
+
+.btn-refresh {
+  background: url('../images/ic_add_white_24px.svg') center center no-repeat;
+}
+.btn-add {
+  background: url('../images/ic_refresh_white_24px.svg') center center no-repeat;
+}
+
+.cardTemplate {
+  /* display: none; */
+}
+
+.card {
+  background-color: #fff;
+  padding: 16px;
+  margin: 16px;
+  background-color: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+
+.card .location {
+  font-size: 30px;
+}
+
+.card .time {
+  font-size: 14px;
+}
+.card .description {
+  font-size: 14px;
+}
+
+.card .current {
+  display: flex;
+}
+
+.card .current .visual {
+  display: flex;
+  flex-grow: 1;
+}
+
+.card .icon {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.card .current .visual .icon {
+  width: 96px;
+  height: 96px;
+}
+
+.card .visual .temperature {
+  display: flex;
+  align-items: flex-start;
+}
+
+
+.card .visual .temperature .value {
+  font-size: 48px;
+}
+
+.card .visual .temperature .scale {
+  font-size: 16px;
+  vertical-align: super;
+
+}
+
+.card .current .description .humidity{
+  font-size: 14px;
+}
+
+.card .current .description .humidity:before{
+  content: '湿度: ';
+  color: #888
+}
+
+.card .current .description .wind:before{
+  content: '风: ';
+  color: #888
+}
+
+.card .current .description .aqi:before{
+  content: 'PM2.5: ';
+  color: #888
+}
+
+.card .future {
+  display: flex;
+}
+
+.card .future .oneday {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.card .future .oneday .icon {
+  width: 32px;
+  height: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+.windy {
+  background-image: url('../images/wind.png')
+}
+
+.clear {
+  background-image: url('../images/clear.png')
+}
+
+.cloud_sunny {
+  background-image: url('../images/cloudy_s_sunny.png')
+}
+
+.cloud {
+  background-image: url('../images/cloudy.png')
+}
+
+.cloud_scattered_showers {
+  background-image: url('../images/cloudy-scattered-showers.png')
+}
+
+.fog {
+  background-image: url('../images/fog.png')
+}
+
+.partly_cloudy {
+  background-image: url('../images/partly-cloudy.png')
+}
+
+.rain {
+  background-image: url('../images/rain.png')
+}
+
+.scatted_shower {
+  background-image: url('../images/scattered-showers.png')
+}
+
+.sleet {
+  background-image: url('../images/sleet.png')
+}
+
+.sonw {
+  background-image: url('../images/sonw.png')
+}
+
+.thunderstorm {
+  background-image: url('../images/thunderstorm.png')
+}
+

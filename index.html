@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Weather PWA</h1>
+      <button id="refresh" class="btn btn-refresh"></button>
+      <button id="add" class="btn btn-add"></button>
+    </header>
+    <main>
+      <div class="card cardTemplate ">
+        <div class="last-update-time" hidden></div>
+        <div class="location">
+          北京
+        </div>
+        <div class="time">
+          2019.01.01 星期五
+        </div>
+        <div class="description">
+          晴 多云
+        </div>
+        <div class="current">
+          <div class="visual">
+            <div class="icon windy"></div>
+            <div class="temperature">
+              <span class="value">66</span>
+              <span class="scale">°C</span>
+            </div>
+          </div>
+          <div class="description">
+            <div class="humidity">66%</div>
+            <div class="wind">5级 西北风</div>
+            <div class="aqi">88</div>
+          </div>
+        </div>
+        <div class="future">
+          <div class="oneday">
+            <div class="date">Fri</div>
+            <div class="icon windy"></div>
+            <div class="temp-high">
+              <span class="value">66</span>
+              &deg;
+            </div>
+            <div class="temp-low">
+              <span class="value">
+                88
+              </span>
+              &deg;
+            </div>
+          </div>
+
+          <div class="oneday">
+            <div class="date">Fri</div>
+            <div class="icon windy"></div>
+            <div class="temp-high">
+              <span class="value">66</span>
+              &deg;
+            </div>
+            <div class="temp-low">
+              <span class="value">
+                88
+              </span>
+              &deg;
+            </div>
+          </div>
+
+          <div class="oneday">
+            <div class="date">Fri</div>
+            <div class="icon windy"></div>
+            <div class="temp-high">
+              <span class="value">66</span>
+              &deg;
+            </div>
+            <div class="temp-low">
+              <span class="value">
+                88
+              </span>
+              &deg;
+            </div>
+          </div>
+
+          <div class="oneday">
+            <div class="date">Fri</div>
+            <div class="icon windy"></div>
+            <div class="temp-high">
+              <span class="value">66</span>
+              &deg;
+            </div>
+            <div class="temp-low">
+              <span class="value">
+                88
+              </span>
+              &deg;
+            </div>
+          </div>
+
+          <div class="oneday">
+            <div class="date">Fri</div>
+            <div class="icon windy"></div>
+            <div class="temp-high">
+              <span class="value">66</span>
+              &deg;
+            </div>
+            <div class="temp-low">
+              <span class="value">
+                88
+              </span>
+              &deg;
+            </div>
+          </div>
+          <div class="oneday oneDayTemplate" hidden>
+              <div class="date"></div>
+              <div class="icon"></div>
+              <div class="temp-high">
+                <span class="value"></span>&deg;
+              </div>
+              <div class="temp-low">
+                <span class="value"></span>&deg;
+              </div>
+            </div>
+        </div>
+      </div>
+    </main>
+    <div class="dialog-wrapper">
+      <div class="dialog"></div>
+    </div>
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>
